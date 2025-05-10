@@ -1,10 +1,10 @@
-package com.example.crud;
+package com.example.crud.domain.book.domain;
 
 import jakarta.persistence.*;
-import org.springframework.context.annotation.Primary;
 
 @Entity
 public class Book {
+    public void Book() {}
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
