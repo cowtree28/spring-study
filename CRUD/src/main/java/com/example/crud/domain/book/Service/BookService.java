@@ -1,16 +1,16 @@
 package com.example.crud.domain.book.Service;
 
 import com.example.crud.domain.book.domain.Book;
-import com.example.crud.domain.book.domain.Repository.BookRepository;
+import com.example.crud.domain.book.domain.repository.BookRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
 @Service
-public class BookCRUDService {
+public class BookService {
     private final BookRepository bookRepository; // 의존성 주입
 
-    public BookCRUDService(BookRepository bookRepository) {
+    public BookService(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
     }
 

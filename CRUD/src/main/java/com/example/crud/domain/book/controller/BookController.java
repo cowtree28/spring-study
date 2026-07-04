@@ -1,6 +1,6 @@
 package com.example.crud.domain.book.controller;
 
-import com.example.crud.domain.book.Service.BookCRUDService;
+import com.example.crud.domain.book.Service.BookService;
 import com.example.crud.domain.book.domain.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 public class BookController {
 
     @Autowired
-    private BookCRUDService bookService;
+    private BookService bookService;
 
     @GetMapping("/{id}")
     public ResponseEntity<Book> getBookById(@PathVariable Long id) {
